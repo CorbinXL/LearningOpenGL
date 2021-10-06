@@ -1,0 +1,35 @@
+﻿  源.cpp
+C:\Users\zdian\source\repos\LearningOpenGL\LGL\include\sb7.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\zdian\source\repos\LearningOpenGL\LGL\include\sb7ext.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+源.obj : error LNK2019: 无法解析的外部符号 _gl3wInit，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _gl3wIsSupported，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwInit，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwTerminate，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwGetPrimaryMonitor，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindow，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwDestroyWindow，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwWindowShouldClose，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowSizeCallback，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwPollEvents，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwSetInputMode，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwGetKey，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwSetKeyCallback，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwSetMouseButtonCallback，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwSetCursorPosCallback，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwSetScrollCallback，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwGetTime，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwMakeContextCurrent，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 _glfwSwapBuffers，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 "int __cdecl sb6IsExtensionSupported(char const *)" (?sb6IsExtensionSupported@@YAHPBD@Z)，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 "private: static void __stdcall sb7::application::debug_callback(unsigned int,unsigned int,unsigned int,unsigned int,int,char const *,void *)" (?debug_callback@application@sb7@@CGXIIIIHPBDPAX@Z)，函数 "public: virtual void __thiscall sb7::application::run(class sb7::application *)" (?run@application@sb7@@UAEXPAV12@@Z) 中引用了该符号
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wEnable
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wGetString
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wClearBufferfv
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wDebugMessageCallback
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wDebugMessageCallbackARB
+源.obj : error LNK2001: 无法解析的外部符号 "protected: static class sb7::application * sb7::application::app" (?app@application@sb7@@1PAV12@A)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 _main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
+C:\Users\zdian\source\repos\LearningOpenGL\LGL\lib\sb7_d.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+C:\Users\zdian\source\repos\LearningOpenGL\LGL\lib\glfw3_d.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+C:\Users\zdian\source\repos\LearningOpenGL\LGL\Debug\01-window.exe : fatal error LNK1120: 29 个无法解析的外部命令

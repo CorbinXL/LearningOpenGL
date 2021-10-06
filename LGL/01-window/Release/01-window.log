@@ -1,0 +1,32 @@
+﻿  源.cpp
+C:\Users\zdian\source\repos\LearningOpenGL\LGL\include\sb7.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\zdian\source\repos\LearningOpenGL\LGL\include\sb7ext.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+源.obj : error LNK2001: 无法解析的外部符号 _glfwSwapBuffers
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wDebugMessageCallbackARB
+源.obj : error LNK2001: 无法解析的外部符号 "int __cdecl sb6IsExtensionSupported(char const *)" (?sb6IsExtensionSupported@@YAHPBD@Z)
+源.obj : error LNK2001: 无法解析的外部符号 _glfwGetTime
+源.obj : error LNK2001: 无法解析的外部符号 _glfwGetKey
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wEnable
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wIsSupported
+源.obj : error LNK2001: 无法解析的外部符号 "private: static void __stdcall sb7::application::debug_callback(unsigned int,unsigned int,unsigned int,unsigned int,int,char const *,void *)" (?debug_callback@application@sb7@@CGXIIIIHPBDPAX@Z)
+源.obj : error LNK2001: 无法解析的外部符号 "protected: static class sb7::application * sb7::application::app" (?app@application@sb7@@1PAV12@A)
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wClearBufferfv
+源.obj : error LNK2001: 无法解析的外部符号 _glfwTerminate
+源.obj : error LNK2001: 无法解析的外部符号 _glfwSetMouseButtonCallback
+源.obj : error LNK2001: 无法解析的外部符号 _glfwPollEvents
+源.obj : error LNK2001: 无法解析的外部符号 _glfwInit
+源.obj : error LNK2001: 无法解析的外部符号 _glfwSetKeyCallback
+源.obj : error LNK2001: 无法解析的外部符号 _glfwSetScrollCallback
+源.obj : error LNK2001: 无法解析的外部符号 _glfwCreateWindow
+源.obj : error LNK2001: 无法解析的外部符号 _glfwWindowHint
+源.obj : error LNK2001: 无法解析的外部符号 _glfwSetInputMode
+源.obj : error LNK2001: 无法解析的外部符号 _glfwMakeContextCurrent
+源.obj : error LNK2001: 无法解析的外部符号 _glfwDestroyWindow
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wDebugMessageCallback
+源.obj : error LNK2001: 无法解析的外部符号 _gl3wInit
+源.obj : error LNK2001: 无法解析的外部符号 _glfwGetPrimaryMonitor
+源.obj : error LNK2001: 无法解析的外部符号 _glfwSetCursorPosCallback
+源.obj : error LNK2001: 无法解析的外部符号 _glfwSetWindowSizeCallback
+源.obj : error LNK2001: 无法解析的外部符号 _glfwWindowShouldClose
+MSVCRT.lib(exe_main.obj) : error LNK2001: 无法解析的外部符号 _main
+C:\Users\zdian\source\repos\LearningOpenGL\LGL\Release\01-window.exe : fatal error LNK1120: 28 个无法解析的外部命令
