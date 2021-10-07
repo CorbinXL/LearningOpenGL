@@ -36,8 +36,9 @@ public:
 		glClearBufferfv(GL_COLOR, 0, color);
 		// Use the program object we created earlier for rendering
 		glUseProgram(rendering_program);
-		// Draw one point
-		glDrawArrays(GL_POINTS, 0, 1);
+
+		// Draw one triangle
+		glDrawArrays(GL_TRIANGLES, 0, 3);
 	}
 
 	void startup()
@@ -64,9 +65,12 @@ public:
 		{
 		"#version 450 core \n"
 		" \n"
+		"const vec4 vertices[3] = vec4[3](vec4(0.25, -0.25, 0.5, 1.0), \n"
+		"vec4(-0.25, -0.25, 0.5, 1.0), \n"
+		"vec4(0.25, 0.25, 0.5, 1.0)); \n"
 		"void main(void) \n"
 		"{ \n"
-		" gl_Position = vec4(0.0, 0.0, 0.5, 1.0); \n"
+		" gl_Position = vertices[gl_VertexID]; \n"
 		"} \n"
 		};
 		// Source code for fragment shader
