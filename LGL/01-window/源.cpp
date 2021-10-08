@@ -22,8 +22,10 @@ public:
 		GLfloat attrib[] = { (float)sin(currentTime) * 0.5f,
 		(float)cos(currentTime) * 0.6f,
 		0.0f, 0.0f };
+		GLfloat attribColor[] = { 1, 0, 0, 1};
 		// Update the value of input attribute 0
 		glVertexAttrib4fv(0, attrib);
+		glVertexAttrib4fv(1, attribColor);
 		// Draw one triangle
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 	}
@@ -52,12 +54,17 @@ public:
 		"#version 450 core \n"
 		" \n"
 		"layout (location = 0) in vec4 offset; \n"
+		"layout (location = 1) in vec4 color; \n"
+		"\n"
+		"out vec4 vs_color; \n"
+		"\n"
 		"const vec4 vertices[3] = vec4[3](vec4(0.25, -0.25, 0.5, 1.0), \n"
 		"vec4(-0.25, -0.25, 0.5, 1.0), \n"
 		"vec4(0.25, 0.25, 0.5, 1.0)); \n"
 		"void main(void) \n"
 		"{ \n"
 		" gl_Position = vertices[gl_VertexID] + offset; \n"
+		" vs_color = color;"
 		"} \n"
 		};
 		// Source code for fragment shader
@@ -65,11 +72,12 @@ public:
 		{
 		"#version 450 core \n"
 		" \n"
+		"in vec4 vs_color;"
 		"out vec4 color; \n"
 		" \n"
 		"void main(void) \n"
 		"{ \n"
-		" color = vec4(0.0, 0.8, 1.0, 1.0); \n"
+		" color = vs_color; \n"
 		"} \n"
 		};
 		// Create and compile vertex shader
