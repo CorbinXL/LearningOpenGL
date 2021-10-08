@@ -56,7 +56,10 @@ public:
 		"layout (location = 0) in vec4 offset; \n"
 		"layout (location = 1) in vec4 color; \n"
 		"\n"
-		"out vec4 vs_color; \n"
+		"out VS_OUT \n"
+		"{ \n"
+		"vec4 color;\n"
+		"} vs_out;\n"
 		"\n"
 		"const vec4 vertices[3] = vec4[3](vec4(0.25, -0.25, 0.5, 1.0), \n"
 		"vec4(-0.25, -0.25, 0.5, 1.0), \n"
@@ -64,7 +67,7 @@ public:
 		"void main(void) \n"
 		"{ \n"
 		" gl_Position = vertices[gl_VertexID] + offset; \n"
-		" vs_color = color;"
+		" vs_out.color = color;"
 		"} \n"
 		};
 		// Source code for fragment shader
@@ -72,12 +75,15 @@ public:
 		{
 		"#version 450 core \n"
 		" \n"
-		"in vec4 vs_color;"
+		"in VS_OUT \n"
+		"{ \n"
+		"vec4 color;"
+		"} fs_in; \n"
 		"out vec4 color; \n"
 		" \n"
 		"void main(void) \n"
 		"{ \n"
-		" color = vs_color; \n"
+		" color = fs_in.color; \n"
 		"} \n"
 		};
 		// Create and compile vertex shader
