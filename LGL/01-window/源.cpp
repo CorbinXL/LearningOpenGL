@@ -11,24 +11,7 @@ class my_application : public sb7::application
 public:
 
 	// Our rendering function
-	//void render(double currentTime)
-	//{
-	//	// Simply clear the window with red
-	//	static const GLfloat red[] = { 1.0f, 0.0f, 0.0f, 1.0f };
-	//	glClearBufferfv(GL_COLOR, 0, red);
-	//}
-
-	// Our rendering function
-	//void render(double currentTime)
-	//{
-	//	const GLfloat color[] = { (float)sin(currentTime) * 0.5f + 0.5f,
-	//	(float)cos(currentTime) * 0.5f + 0.5f,
-	//	0.0f, 1.0f };
-	//	glClearBufferfv(GL_COLOR, 0, color);
-	//}
-
-	// Our rendering function
-	void render(double currentTime)
+	virtual void render(double currentTime)
 	{
 		const GLfloat color[] = { (float)sin(currentTime) * 0.5f + 0.5f,
 		(float)cos(currentTime) * 0.5f + 0.5f,
@@ -36,11 +19,14 @@ public:
 		glClearBufferfv(GL_COLOR, 0, color);
 		// Use the program object we created earlier for rendering
 		glUseProgram(rendering_program);
-
+		GLfloat attrib[] = { (float)sin(currentTime) * 0.5f,
+		(float)cos(currentTime) * 0.6f,
+		0.0f, 0.0f };
+		// Update the value of input attribute 0
+		glVertexAttrib4fv(0, attrib);
 		// Draw one triangle
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 	}
-
 	void startup()
 	{
 		rendering_program = compile_shaders();
@@ -65,12 +51,13 @@ public:
 		{
 		"#version 450 core \n"
 		" \n"
+		"layout (location = 0) in vec4 offset; \n"
 		"const vec4 vertices[3] = vec4[3](vec4(0.25, -0.25, 0.5, 1.0), \n"
 		"vec4(-0.25, -0.25, 0.5, 1.0), \n"
 		"vec4(0.25, 0.25, 0.5, 1.0)); \n"
 		"void main(void) \n"
 		"{ \n"
-		" gl_Position = vertices[gl_VertexID]; \n"
+		" gl_Position = vertices[gl_VertexID] + offset; \n"
 		"} \n"
 		};
 		// Source code for fragment shader
